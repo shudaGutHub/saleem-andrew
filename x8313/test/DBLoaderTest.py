@@ -43,9 +43,7 @@ def getSimulator(races):
     conn.close()
     return simulator
 
+
+
 simulator = getSimulator(races_test)
-simulator.snoopScratches()
-simulator.snoopPoolSizes()
-simulator.snoopFinalOdds()
-
-
+print simulator.__dict__
